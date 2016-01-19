@@ -27,7 +27,7 @@ For more detail, see the [end of this README](#how-it-works-more-detail).
 
 Create constant in the beginning of source file you want to debug:
 
-const BREAKPOINT = "breakpoint" 
+    const BREAKPOINT = "breakpoint" 
 
 Insert a breakpoint anywhere in a source file you want to debug:
 
