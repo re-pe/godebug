@@ -228,7 +228,7 @@ func isNewBreakpoint(node ast.Node) (b bool) {
 		}
 	}()
 	a := node.(*ast.AssignStmt)
-	return a.Lhs[0].(*ast.Ident).Name == "_" && a.Rhs[0].(*ast.BasicLit).Value == `"breakpoint"`
+	return a.Lhs[0].(*ast.Ident).Name == "_" && a.Rhs[0].(*ast.Ident).Value == `BREAKPOINT`
 }
 
 func isOldBreakpoint(node ast.Node) (b bool) {
